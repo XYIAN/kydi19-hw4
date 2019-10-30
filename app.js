@@ -9,16 +9,26 @@ const faker = require('faker');
 var randomName = faker.name.findName(); 
 var randomEmail = faker.internet.email(); 
 var randomCard = faker.helpers.createCard(); // random contact card containing many properties
-
+var pro = faker.internet.url; 
 app.get("/", function(req,res)//root route
 {
-   res.render("index.ejs");
+   res.render("index.ejs",{
+      name: faker.name.findName() , 
+      email: faker.internet.email(), 
+      card: faker.address.zipCode(), 
+      url: faker.internet.url()
+   });
    //res.send("it works!"); 
    
 });
-app.get("/p2", function(req,res)//root route
+app.use("/p2", function(req,res)//root route
 {
-   res.render("p2.ejs");
+   res.render("p2.ejs", {
+      name: faker.name.findName() , 
+      email: faker.internet.email(), 
+      card: faker.address.zipCode(), 
+      url: faker.internet.url()
+   });
    //res.send("it works!");
    
    
@@ -27,13 +37,24 @@ app.get("/p2", function(req,res)//root route
 });
 app.get("/p3", function(req,res)//root route
 {
-   res.render("p3.ejs");
+   res.render("p3.ejs", {
+      name: faker.name.findName() , 
+      email: faker.internet.email(), 
+      card: faker.address.zipCode(), 
+      url: faker.internet.url()
+      
+   });
    //res.send("it works!"); 
    
 });
 app.get("/p4", function(req,res)//root route
 {
-   res.render("p4.ejs");
+   res.render("p4.ejs", {
+      name: faker.name.findName() , 
+      email: faker.internet.email(), 
+      card: faker.address.zipCode(), 
+      url: faker.internet.url()
+   });
    //res.send("it works!"); 
    
 });
