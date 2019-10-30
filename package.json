@@ -1,0 +1,25 @@
+{
+  "name": "kydi19-hw4",
+  "version": "1.0.0",
+  "description": "cst336 Internet Programming hw4 (express)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XYIAN/kydi19-hw4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XYIAN/kydi19-hw4/issues"
+  },
+  "homepage": "https://github.com/XYIAN/kydi19-hw4#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "request": "^2.88.0"
+  }
+}
